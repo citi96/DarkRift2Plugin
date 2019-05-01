@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DR2Plugin", "DR2Plugin\DR2Plugin.csproj", "{374D0082-45B1-4B8B-88DD-EE06A00B3B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCommon", "GameCommon\GameCommon.csproj", "{F9D88067-4E44-41A9-ABBD-235B319FA4FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEntities", "DataEntities\DataEntities.csproj", "{5C48907B-9988-4DD5-BA1E-4B8D9CEE76DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{685DFE8C-9FF7-4A4F-A3A1-789BBDA59D97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		MySQLDebug|Any CPU = MySQLDebug|Any CPU
+		MySQLRelease|Any CPU = MySQLRelease|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{374D0082-45B1-4B8B-88DD-EE06A00B3B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374D0082-45B1-4B8B-88DD-EE06A00B3B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374D0082-45B1-4B8B-88DD-EE06A00B3B5D}.MySQLDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374D0082-45B1-4B8B-88DD-EE06A00B3B5D}.MySQLDebug|Any CPU.Build.0 = Debug|Any CPU
+		{374D0082-45B1-4B8B-88DD-EE06A00B3B5D}.MySQLRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{374D0082-45B1-4B8B-88DD-EE06A00B3B5D}.MySQLRelease|Any CPU.Build.0 = Release|Any CPU
+		{374D0082-45B1-4B8B-88DD-EE06A00B3B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374D0082-45B1-4B8B-88DD-EE06A00B3B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9D88067-4E44-41A9-ABBD-235B319FA4FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D88067-4E44-41A9-ABBD-235B319FA4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D88067-4E44-41A9-ABBD-235B319FA4FD}.MySQLDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D88067-4E44-41A9-ABBD-235B319FA4FD}.MySQLDebug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D88067-4E44-41A9-ABBD-235B319FA4FD}.MySQLRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D88067-4E44-41A9-ABBD-235B319FA4FD}.MySQLRelease|Any CPU.Build.0 = Release|Any CPU
+		{F9D88067-4E44-41A9-ABBD-235B319FA4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D88067-4E44-41A9-ABBD-235B319FA4FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C48907B-9988-4DD5-BA1E-4B8D9CEE76DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C48907B-9988-4DD5-BA1E-4B8D9CEE76DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C48907B-9988-4DD5-BA1E-4B8D9CEE76DD}.MySQLDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C48907B-9988-4DD5-BA1E-4B8D9CEE76DD}.MySQLDebug|Any CPU.Build.0 = Debug|Any CPU
+		{5C48907B-9988-4DD5-BA1E-4B8D9CEE76DD}.MySQLRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{5C48907B-9988-4DD5-BA1E-4B8D9CEE76DD}.MySQLRelease|Any CPU.Build.0 = Release|Any CPU
+		{5C48907B-9988-4DD5-BA1E-4B8D9CEE76DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C48907B-9988-4DD5-BA1E-4B8D9CEE76DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{685DFE8C-9FF7-4A4F-A3A1-789BBDA59D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685DFE8C-9FF7-4A4F-A3A1-789BBDA59D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685DFE8C-9FF7-4A4F-A3A1-789BBDA59D97}.MySQLDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685DFE8C-9FF7-4A4F-A3A1-789BBDA59D97}.MySQLDebug|Any CPU.Build.0 = Debug|Any CPU
+		{685DFE8C-9FF7-4A4F-A3A1-789BBDA59D97}.MySQLRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{685DFE8C-9FF7-4A4F-A3A1-789BBDA59D97}.MySQLRelease|Any CPU.Build.0 = Release|Any CPU
+		{685DFE8C-9FF7-4A4F-A3A1-789BBDA59D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685DFE8C-9FF7-4A4F-A3A1-789BBDA59D97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {84F8D713-EEB7-42F4-9D28-7490B142901B}
+	EndGlobalSection
+EndGlobal
