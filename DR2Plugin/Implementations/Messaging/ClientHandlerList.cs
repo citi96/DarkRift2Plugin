@@ -54,7 +54,7 @@ namespace DR2Plugin.Implementations.Messaging {
                     if (!handlersList.Any()) {
                         // No default handler for incoming client request. Usually output error message on server.
                         //defaultRequestHandler.handleMessage(message, clientPeer);
-                        Console.WriteLine($"Failed to handle message {message.Code} - {message.SubCode}");
+                        Console.WriteLine($"No Client handler for message {message.Code} - {message.SubCode}");
                     }
 
                     // If the default handler was called, its because the handler list was empty. otherwise we call all matching handlers

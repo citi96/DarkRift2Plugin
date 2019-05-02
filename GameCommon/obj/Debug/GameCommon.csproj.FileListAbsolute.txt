@@ -11,3 +11,14 @@ D:\Francesco\Documents\Visual Studio 2019\Projects\DR2Plugin\GameCommon\obj\Debu
 D:\Francesco\Documents\Visual Studio 2019\Projects\DR2Plugin\GameCommon\obj\Debug\GameCommon.dll
 D:\Francesco\Documents\Visual Studio 2019\Projects\DR2Plugin\GameCommon\obj\Debug\GameCommon.pdb
 D:\Francesco\Documents\Visual Studio 2019\Projects\DR2Plugin\GameCommon\obj\Debug\GameCommon.csprojAssemblyReference.cache
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\bin\Debug\GameCommon.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\bin\Debug\GameCommon.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\bin\Debug\Newtonsoft.Json.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\bin\Debug\Newtonsoft.Json.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\bin\Debug\Newtonsoft.Json.Bson.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\bin\Debug\Newtonsoft.Json.Bson.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\obj\Debug\GameCommon.csprojAssemblyReference.cache
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\obj\Debug\GameCommon.csproj.CoreCompileInputs.cache
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\obj\Debug\GameCommon.csproj.CopyComplete
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\obj\Debug\GameCommon.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\GameCommon\obj\Debug\GameCommon.pdb

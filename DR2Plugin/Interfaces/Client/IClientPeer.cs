@@ -1,5 +1,4 @@
-﻿using System;
-using DarkRift.Server;
+﻿using DarkRift.Server;
 using DR2Plugin.Interfaces.Messaging;
 using DR2Plugin.Interfaces.Server;
 

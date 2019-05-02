@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using DR2Plugin.Data.Client;
+﻿using DR2Plugin.Data.Client;
 using DR2Plugin.Implementations.Messaging;
 using DR2Plugin.Interfaces.Client;
 using DR2Plugin.Interfaces.Messaging;
-using DR2Plugin.Interfaces.Services;
 using GameCommon;
+using System;
+using System.Collections.Generic;
 
 namespace DR2Plugin.Handlers {
     public class TestRequestResponse : IHandler<IClientPeer> {

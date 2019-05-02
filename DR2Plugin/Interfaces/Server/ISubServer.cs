@@ -11,6 +11,5 @@ namespace DR2Plugin.Interfaces.Server {
 
         void ConnectPeer(IClientPeer peer);
         void DisconnectPeer(IClientPeer peer);
-        void OnOperationRequest(MessageReceivedEventArgs e, Dictionary<byte, object> parameters, IClientPeer peer);
     }
 }

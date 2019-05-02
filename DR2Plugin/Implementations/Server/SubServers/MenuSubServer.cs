@@ -5,21 +5,18 @@ using DR2Plugin.Implementations.Client;
 using DR2Plugin.Implementations.Messaging;
 using DR2Plugin.Interfaces.Client;
 using DR2Plugin.Interfaces.Server;
-using DR2Plugin.Interfaces.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DR2Plugin.Implementations.Server.SubServers {
-    public class LoginSubServer : SubServer {
+    public class MenuSubServer : SubServer {
         public override byte SubCodeParameterCode => 0;
         public override IConnectionCollection<IClientPeer> ConnectionCollection { get; }
 
-        public LoginSubServer(IAuthorizationService authService, Plugin plugin) : base(plugin) {
+        public MenuSubServer(Plugin plugin) : base(plugin) {
             ConnectionCollection = new ClientConnectionCollection();
-            var loginHandlers = new List<AbstractSubServerHandler>
-                {new LoginAccountCreationHandler(authService), new LoginAuthorizationHandler(authService)};
-            subServerHandlerList = new SubServerHandlerList(loginHandlers);
+            var menuHandlers = new List<AbstractSubServerHandler>{};
+            subServerHandlerList = new SubServerHandlerList(menuHandlers);
         }
 
         public override void ConnectPeer(IClientPeer peer) {

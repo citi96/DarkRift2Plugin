@@ -1,15 +1,13 @@
-﻿using Domain.Domain;
-using DR2Plugin.Data.Client;
-using DR2Plugin.Implementations.Messaging;
+﻿using DR2Plugin.Implementations.Messaging;
 using DR2Plugin.Interfaces.Client;
 using DR2Plugin.Interfaces.Messaging;
+using DR2Plugin.Interfaces.Server;
 using DR2Plugin.Interfaces.Services;
 using GameCommon;
 using MGF.Photon.Implementation.Codes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using DR2Plugin.Interfaces.Server;
 
 namespace DR2Plugin.Handlers {
     public class LoginAccountCreationHandler : AbstractSubServerHandler {
@@ -47,9 +45,9 @@ namespace DR2Plugin.Handlers {
                 }
             }
             catch (KeyNotFoundException e) {
-                Console.WriteLine($"Catch exception {e.Message}.");
-                Console.WriteLine($"For keys: 2, 3, 5.");
-                Console.WriteLine($"Catch exception {e.StackTrace}");
+                Console.WriteLine($"Caught exception {e.Message}.");
+                Console.WriteLine("For keys: 2, 3, 5.");
+                Console.WriteLine($"Caught exception {e.StackTrace}");
                 return false;
             }
 

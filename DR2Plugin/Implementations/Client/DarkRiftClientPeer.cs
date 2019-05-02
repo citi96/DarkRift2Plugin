@@ -32,7 +32,7 @@ namespace DR2Plugin.Implementations.Client {
 
             Server.Plugin.ClientManager.ClientDisconnected += OnDisconnect;
             Console.WriteLine("Created client peer.");
-            this.Client.MessageReceived += OnOperationRequest;
+            Client.MessageReceived += OnOperationRequest;
         }
 
         public void Connect() {
@@ -81,16 +81,11 @@ namespace DR2Plugin.Implementations.Client {
                 using (var reader = message.GetReader()) {
                     var parameters =
                         MessageSerializerService.DeserializeObjectOfType<Dictionary<byte, object>>(reader.ReadString());
-                    bool handled = handlerList.HandleMessage(
+                    handlerList.HandleMessage(
                         new Request((byte) e.Tag,
                             parameters.ContainsKey(Server.SubCodeParameterCode)
                                 ? (int?) Convert.ToInt32(parameters[Server.SubCodeParameterCode])
                                 : null, parameters), this);
-
-                    if (!handled) {
-                        Console.WriteLine("Sending the operation request to the client sub-server");
-                        Server.OnOperationRequest(e, parameters, this);
-                    }
                 }
             }
         }
@@ -98,7 +93,7 @@ namespace DR2Plugin.Implementations.Client {
         private void OnDisconnect(object sender, ClientDisconnectedEventArgs e) {
             Server.DisconnectPeer(this);
             var userData = (UserData) clientData[typeof(UserData)];
-            Console.WriteLine($"User {userData.Id} joined the game.");
+            Console.WriteLine($"User {userData.Id} left the game.");
         }
 
         T IClientPeer.ClientData<T>() {

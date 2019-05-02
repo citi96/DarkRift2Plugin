@@ -1,15 +1,16 @@
 ﻿using Domain.Domain;
 using DR2Plugin.Data.Client;
 using DR2Plugin.Implementations.Messaging;
+using DR2Plugin.Implementations.Server.SubServers;
 using DR2Plugin.Interfaces.Client;
 using DR2Plugin.Interfaces.Messaging;
+using DR2Plugin.Interfaces.Server;
 using DR2Plugin.Interfaces.Services;
 using GameCommon;
 using MGF.Photon.Implementation.Codes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using DR2Plugin.Interfaces.Server;
 
 namespace DR2Plugin.Handlers {
     public class LoginAuthorizationHandler : AbstractSubServerHandler {
@@ -29,26 +30,26 @@ namespace DR2Plugin.Handlers {
 
             try {
                 if (connectionCollection.GetPeers<IClientPeer>().FirstOrDefault(p => p == peer) == default) {
-                    response = HandleUserAlreadyLoggedIn(message);
+                    response = HandleUserAlreadyLoggedIn();
                 } else {
                     if (!message.Parameters.ContainsKey((byte) MessageParameterCode.LoginName) ||
                         !message.Parameters.ContainsKey((byte) MessageParameterCode.Password)) {
-                        response = HandleNotEnoughArguments(message);
+                        response = HandleNotEnoughArguments();
                     } else {
                         var returnCode = authService.IsAuthorized(out var user,
                             (string) message.Parameters[(byte) MessageParameterCode.LoginName],
                             (string) message.Parameters[(byte) MessageParameterCode.Password]);
 
                         response = returnCode == ReturnCode.Ok
-                            ? HandleCorrectRequest(message, peer, user, returnCode)
+                            ? HandleCorrectRequest(message, subServer, user, returnCode)
                             : HandleInvalidUsernamePassword(returnCode);
                     }
                 }
             }
             catch (KeyNotFoundException e) {
-                Console.WriteLine($"Catch exception {e.Message}.");
-                Console.WriteLine($"For keys: 2, 3.");
-                Console.WriteLine($"Catch exception {e.StackTrace}");
+                Console.WriteLine($"Caught exception {e.Message}.");
+                Console.WriteLine("For keys: 2, 3.");
+                Console.WriteLine($"Caught exception {e.StackTrace}");
                 return false;
             }
 
@@ -64,12 +65,12 @@ namespace DR2Plugin.Handlers {
             return response;
         }
 
-        private Response HandleCorrectRequest(IMessage message, IClientPeer peer, User user, ReturnCode returnCode) {
-            peer.Connect();
+        private Response HandleCorrectRequest(IMessage message, ISubServer subServer, User user, ReturnCode returnCode) {
             // Add our user id to the client peer.
             peer.ClientData<UserData>().Id = user.Id;
             peer.ClientData<UserData>().Heads = user.Souls;
             peer.ClientData<UserData>().Skulls = user.Skulls;
+            peer.Connect();
 
             var response = new Response(Code,
                 new Dictionary<byte, object> {
@@ -78,16 +79,22 @@ namespace DR2Plugin.Handlers {
                     {(byte) MessageParameterCode.Souls, user.Skulls},
                     {(byte) MessageParameterCode.SubCodeParameterCode, SubCode}
                 }, SubCode, "", (short) returnCode);
+
+            if(subServer.Plugin is ServerPlugin serverPlugin) {
+                subServer.DisconnectPeer(peer);
+                serverPlugin.GetSubServerOfType<MenuSubServer>().First().ConnectPeer(peer);
+            }
+
             return response;
         }
 
-        private Response HandleNotEnoughArguments(IMessage message) {
+        private Response HandleNotEnoughArguments() {
             return new Response(Code, new Dictionary<byte, object> {
                 {(byte) MessageParameterCode.SubCodeParameterCode, SubCode}
             }, SubCode, "Not enough arguments.", (short) ReturnCode.OperationInvalid);
         }
 
-        private Response HandleUserAlreadyLoggedIn(IMessage message) {
+        private Response HandleUserAlreadyLoggedIn() {
             return new Response(Code, new Dictionary<byte, object> {
                     {(byte) MessageParameterCode.SubCodeParameterCode, SubCode}
                 }, SubCode, "User already logged in.",

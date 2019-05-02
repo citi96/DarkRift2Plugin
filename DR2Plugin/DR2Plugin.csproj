@@ -96,6 +96,7 @@
     <Compile Include="Handlers\AbstractSubServerHandler.cs" />
     <Compile Include="Implementations\Messaging\SubServerHandlerList.cs" />
     <Compile Include="Implementations\Server\SubServerConnectionCollection.cs" />
+    <Compile Include="Implementations\Server\SubServers\MenuSubServer.cs" />
     <Compile Include="Implementations\Server\SubServers\LoginSubServer.cs" />
     <Compile Include="Implementations\Messaging\Event.cs" />
     <Compile Include="Implementations\Messaging\ClientHandlerList.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Interfaces\Messaging\IHandlerList.cs" />
     <Compile Include="Interfaces\Messaging\IMessage.cs" />
     <Compile Include="Interfaces\Server\ISubServer.cs" />
+    <Compile Include="Interfaces\Server\SubServer.cs" />
     <Compile Include="Interfaces\Services\IAuthorizationService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

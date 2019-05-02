@@ -24,7 +24,8 @@ namespace DR2Plugin.Implementations.Server {
         }
 
         public List<T> GetPeers<T>() where T : class, ISubServer {
-            return new List<T>(subServers.Cast<T>());
+            var list = subServers.Where(s => s.GetType() == typeof(T)).ToList().Cast<T>();
+            return new List<T>(list);
         }
     }
 }

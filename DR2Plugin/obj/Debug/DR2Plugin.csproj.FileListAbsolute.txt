@@ -50,3 +50,46 @@ D:\Francesco\Documents\Visual Studio 2019\Projects\DR2Plugin\DR2Plugin\bin\Debug
 D:\Francesco\Documents\Visual Studio 2019\Projects\DR2Plugin\DR2Plugin\bin\Debug\EntityFramework6.Npgsql.xml
 D:\Francesco\Documents\Visual Studio 2019\Projects\DR2Plugin\DR2Plugin\bin\Debug\Npgsql.pdb
 D:\Francesco\Documents\Visual Studio 2019\Projects\DR2Plugin\DR2Plugin\bin\Debug\Npgsql.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\DR2Plugin.dll.config
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\DR2Plugin.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\DR2Plugin.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Domain.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\EntityFramework.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\EntityFramework.SqlServer.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\EntityFramework6.Npgsql.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\GameCommon.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Npgsql.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Buffers.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Memory.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Numerics.Vectors.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.ValueTuple.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\DataEntities.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Newtonsoft.Json.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Domain.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Domain.dll.config
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\GameCommon.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\EntityFramework.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\EntityFramework.SqlServer.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\EntityFramework6.Npgsql.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Npgsql.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Npgsql.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Buffers.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Memory.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Numerics.Vectors.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\System.ValueTuple.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\DataEntities.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\DataEntities.dll.config
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Newtonsoft.Json.Bson.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Newtonsoft.Json.Bson.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Newtonsoft.Json.pdb
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\bin\Debug\Newtonsoft.Json.xml
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\obj\Debug\DR2Plugin.csprojAssemblyReference.cache
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\obj\Debug\DR2Plugin.csproj.CoreCompileInputs.cache
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\obj\Debug\DR2Plugin.csproj.CopyComplete
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\obj\Debug\DR2Plugin.dll
+D:\Francesco\Documents\GitHub\DarkRift2Plugin\DR2Plugin\obj\Debug\DR2Plugin.pdb
